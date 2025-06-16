@@ -1,0 +1,83 @@
+/* Estilos globales para todo el aplicativo */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color:rgb(247, 247, 247);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 55px;
+  background-color: white;
+  border: rgba(128, 128, 128, 0.185) solid 0.2px;
+}
+
+a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 7px;
+}
+
+.logo h3 {
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 1.3rem;
+}
+
+.nav-link {
+  padding: 10px;
+  margin: 0 auto;
+  color: gray;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+ nav a:hover { /* Modificar por ".nav-link" en caso de solo querer señalar los enlaces y no lo demas */
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.notification img {
+  width: 24px;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-avatar img {
+  width: 35px;
+}
