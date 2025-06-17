@@ -1,0 +1,246 @@
+main {
+  margin: 0 auto;
+  width: 1280px;
+  height: 488px;
+  top: 65px;
+  left: 320px;
+}
+
+.bienvenida {
+  display: flex;
+  margin: 25px 70px;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.mensaje h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mensaje p {
+    font-size: 16px;
+    color: #4b5563;
+}
+
+.create-workout {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px 10px;
+  margin: 8px;
+  background-color: #0284c7;
+  color: white;
+  border: 1px solid #0284c7;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
+.create-workout img {
+  padding-right: 5px;
+}
+
+.search-workouts {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px 70px;
+  border-radius: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-wrapper img {
+  position: absolute;
+  transform: translate(11px, -1px); /* translate(x,y) */
+  width: 18px;
+  height: 18px;
+  pointer-events: none; /* Deshabilita la interaccion del mouse con el icono */
+}
+
+#input-workouts {
+  flex: 1;
+  width: 100%;
+  padding: 10px 35px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+#input-workouts::placeholder {
+  color: #9ca3af;
+}
+
+#input-workouts:hover {
+  border: 2px solid #0284c7;
+  transition: all 0.3s ease;
+}
+
+.filters {
+  display: flex;
+  /* padding: 8px 12px; */
+  justify-content: space-between;
+}
+
+#filter-type {
+  padding: 8px 12px;
+  margin: 5px;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #efefef;
+}
+
+#filter-type:hover {
+  border: 2px solid #0284c7;
+  transition: all 0.3s ease;
+}
+
+#filter-recent {
+  padding: 8px 12px;
+  margin: 5px;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #efefef;
+}
+
+#filter-recent:hover {
+  border: 2px solid #0284c7;
+  transition: all 0.3s ease;
+}
+
+/* Workouts plans */
+
+.workouts-plans {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.workout-task {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: #fff;
+  max-width: 350px;
+  min-width: 300px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 2px 8px 0 #0001;
+}
+
+.workout-task-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.workout-task-info button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.workout-task-info button img {
+  width: 20px;
+  height: auto;
+}
+
+.workout-task-content {
+    display: grid;
+}
+
+.workout-task-content > h3 {
+    font-weight: 700;
+}
+
+.workout-task-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.workout-task-content > p {
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.workout-task-content p {
+  color: #6b7280;
+  font-size: 1rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.workout-list-section {
+    display: grid;
+}
+
+.workout-task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.workout-task-item {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+  font-size: 1rem;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.workout-task-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.workout-task-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.start-btn {
+  flex: 1;
+  background: #0284c7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.calendar-btn {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calendar-btn:hover {
+    border: 1px solid #0284c7;
+    transition: all 0.3s ease;
+}
+
+.calendar-btn img {
+  width: 20px;
+  height: 20px;
+}
