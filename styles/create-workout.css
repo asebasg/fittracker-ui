@@ -1,0 +1,145 @@
+main {
+  margin: 0 auto;
+  width: 1150px;
+  height: 488px;
+}
+
+.bienvenida {
+  display: flex;
+  margin: 1.2rem 3rem;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mensaje h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.mensaje p {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.back-button {
+  display: flex;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: #374151;
+  padding: 0.7rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.back-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Formulario para crear entrenamiento */
+
+.create-workout-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Le otorga la vista de grid al formulario */
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.8rem;
+  margin: 1rem 3rem;
+  border-radius: 8px;
+}
+
+#create-workout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: transparent;
+  font-size: 14px;
+  overflow: auto;
+}
+
+/* input, select, textarea:hover {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #0284c7;
+  background-color: transparent;
+  font-size: 14px;
+  transition: all 0.3s ease;
+} */
+
+input,
+select,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+label {
+  color: #374151;
+  font-size: 14px;
+  padding: 7px;
+}
+
+/* Segunda parte del formulario */
+
+.exercises {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.4rem 1.5rem;
+  width: 100%;
+  /* Se le indica al contenedor div que ocupe todo el ancho disponible de su contenedor padre (create-workout-form)*/
+}
+
+.exercises h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.add-exercise {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #0284c7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-exercise img {
+  width: 18px;
+  height: 18px;
+}

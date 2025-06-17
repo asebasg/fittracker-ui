@@ -1,9 +1,7 @@
 main {
   margin: 0 auto;
-  width: 1280px;
+  width: 1200px;
   height: 488px;
-  top: 65px;
-  left: 320px;
 }
 
 .bienvenida {
@@ -14,13 +12,13 @@ main {
 }
 
 .mensaje h1 {
-    font-size: 32px;
-    font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .mensaje p {
-    font-size: 16px;
-    color: #4b5563;
+  font-size: 16px;
+  color: #4b5563;
 }
 
 .create-workout {
@@ -34,6 +32,8 @@ main {
   border: 1px solid #0284c7;
   border-radius: 6px;
   font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .create-workout img {
@@ -128,11 +128,10 @@ main {
   border-radius: 10px;
   padding: 1.5rem;
   background: #fff;
-  max-width: 350px;
-  min-width: 300px;
-  margin: 1rem;
+  margin: 0.6rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 20px;
   box-shadow: 0 2px 8px 0 #0001;
 }
@@ -156,11 +155,11 @@ main {
 }
 
 .workout-task-content {
-    display: grid;
+  display: grid;
 }
 
 .workout-task-content > h3 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .workout-task-content h3 {
@@ -181,7 +180,7 @@ main {
 }
 
 .workout-list-section {
-    display: grid;
+  display: grid;
 }
 
 .workout-task-list {
@@ -236,8 +235,8 @@ main {
 }
 
 .calendar-btn:hover {
-    border: 1px solid #0284c7;
-    transition: all 0.3s ease;
+  border: 1px solid #0284c7;
+  transition: all 0.3s ease;
 }
 
 .calendar-btn img {
