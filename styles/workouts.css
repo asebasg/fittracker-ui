@@ -120,7 +120,7 @@ main {
 
 .workouts-plans {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .workout-task {
@@ -130,10 +130,10 @@ main {
   background: #fff;
   max-width: 350px;
   min-width: 300px;
-  margin: 1rem auto;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 20px;
   box-shadow: 0 2px 8px 0 #0001;
 }
 
