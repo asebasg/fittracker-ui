@@ -154,7 +154,7 @@ main {
 
 /* Animacion de la card para el cursor */
 
-.management-item.card-animation::before {
+/* .management-item.card-animation::before {
   content: "";
   position: absolute;
   top: 0;
@@ -185,7 +185,7 @@ main {
   background-color: #4cc5fd;
   transition: all 0.2s ease-in;
   color: white;
-}
+} */
 
 .management-button img {
   padding-left: 8px;
