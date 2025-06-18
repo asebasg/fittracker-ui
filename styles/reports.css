@@ -1,0 +1,194 @@
+main {
+  margin: 0 auto;
+  width: 1280px;
+  height: 822px;
+  top: 65px;
+  left: 320px;
+}
+
+/* Reporte de progresos */
+
+.progress-report {
+  /* display: flex;
+  margin: 1.2rem 3rem;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center; */
+  display: flex;
+  margin: 25px 70px;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.content {
+  display: grid;
+}
+
+.interact-options {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+#range {
+  background-color: #efefef;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 2px 17px;
+  margin: 5px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.export {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 2px 17px;
+  margin: 5px;
+  color: #374151;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.export img {
+  width: 17px;
+  height: auto;
+  padding: 4px;
+  pointer-events: none;
+}
+
+/* Estadisticas */
+
+.statics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  margin: 10px 60px;
+  gap: 0.8rem;
+}
+
+.statics-item {
+  display: flex;
+  flex: 1; /* Ocupa todo el espacio disponible de manera proporcional respecto a otros elementos */
+  align-items: center;
+  /* justify-content: space-between;  Aplicar solo si se quiere establecer espacio entre la info y la imagen*/
+  padding: 1.3rem;
+  /* margin: 20px; */
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+}
+
+.statics-img {
+  width: 30px;
+  padding: 10px;
+}
+
+.statics-info {
+  display: grid;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+
+.statics-info h5 {
+  color: #6b7280;
+  font-size: 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.statics-info h3 {
+  font-size: 23px;
+}
+
+.statics-info p {
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.statics-item.goals-achieved .statics-info p {
+  color: #000000;
+}
+
+/* Training Insights */
+
+.training-insights {
+  display: flex;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.workout-frequency {
+  display: grid;
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.workout-frequency-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#workout-frequency {
+  background-color: #efefef;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.workout-frequency img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.strength-progress {
+  display: grid;
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.strength-progress-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#muscle-group {
+  background-color: #efefef;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.strength-progress img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}

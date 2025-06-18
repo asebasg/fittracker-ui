@@ -1,195 +1,175 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitTracker - Dashboard</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/icons/main-logo.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="./" class="logo">
-        <img src="./assets/icons/main-logo.png" alt="Main Logo" />
-        <h3>FitTracker</h3>
-      </a>
-      <nav>
-        <a href="./" class="nav-link dashboard">Dashboard</a>
-        <a href="./templates/workouts.html" class="nav-link">Workouts</a>
-        <a href="./templates/schedule.html" class="nav-link">Schedules</a>
-        <a href="./templates/reports.html" class="nav-link">Reports</a>
-      </nav>
-      <nav>
-        <a href="" class="notification">
-          <img src="./assets/icons/notification.png" alt="notification" />
-        </a>
-        <a href="" class="user-avatar">
-          <img src="./assets/images/user-avatar.png" alt="user-avatar" />
-        </a>
-      </nav>
-    </header>
-    <main>
-      <div class="bienvenida">
-        <h1>¡Bienvenido de nuevo, Sebas!</h1>
-        <p>Sigue tu viaje fitness y mantente motivado</p>
-      </div>
-      <section class="statics">
-        <div class="statics-item total-workouts">
-          <img
-            src="./assets/icons/total-workouts.png"
-            alt="Total workouts"
-            class="statics-img"
-          />
-          <div class="statics-info">
-            <h5>Trabajos totales</h5>
-            <h3>47</h3>
-          </div>
-        </div>
-        <div class="statics-item this-week">
-          <img
-            src="./assets/icons/this-week.png"
-            alt="This week"
-            class="statics-img"
-          />
-          <div class="statics-info">
-            <h5>Esta semana</h5>
-            <h3>3</h3>
-          </div>
-        </div>
-        <div class="statics-item personal-records">
-          <img
-            src="./assets/icons/personal-records.png"
-            alt="Personal records"
-            class="statics-img"
-          />
-          <div class="statics-info">
-            <h5>Logros personales</h5>
-            <h3>12</h3>
-          </div>
-        </div>
-        <div class="statics-item current-streak">
-          <img
-            src="./assets/icons/current-streak.png"
-            alt="Current streak"
-            class="statics-img"
-          />
-          <div class="statics-info">
-            <h5>Racha</h5>
-            <h3>7 dias</h3>
-          </div>
-        </div>
-      </section>
-      <section class="management">
-        <div class="management-item create-workout">
-          <div class="management-info">
-            <img src="./assets/icons/add.png" alt="add" />
-            <div class="management-text">
-              <h3>Crear entrenamiento</h3>
-              <p>Diseña tu sesión de entrenamiento</p>
-            </div>
-          </div>
-          <div class="management-button">
-            <button onclick="window.location.href='./templates/create-workout.html'">
-              Empezar
-              <img src="./assets/icons/arrow-gradient.png" alt="arrow" />
-            </button>
-          </div>
-        </div>
-        <div class="management-item my-workouts card-animation">
-          <div class="management-info">
-            <img src="./assets/icons/list.png" alt="list" />
-            <div class="management-text">
-              <h3>Mis entrenamientos</h3>
-              <p>Gestiona todos tus entrenamientos</p>
-            </div>
-          </div>
-          <div class="management-button">
-            <button onclick="window.location.href='./templates/workouts.html'">
-              Ver todo
-              <img src="./assets/icons/arrow.png" alt="arrow" />
-            </button>
-          </div>
-        </div>
-        <div class="management-item schedule card-animation">
-          <div class="management-info">
-            <img src="./assets/icons/schedule.png" alt="schedule" />
-            <div class="management-text">
-              <h3>Cronograma</h3>
-              <p>Planea tus siguentes sesiones</p>
-            </div>
-          </div>
-          <div class="management-button">
-            <button onclick="window.location.href='./templates/schedule.html'">
-              Programar ahora
-              <img src="./assets/icons/arrow.png" alt="arrow" />
-            </button>
-          </div>
-        </div>
-      </section>
-      <div class="dashboard-panels">
-        <section class="recent-activity">
-          <h3>Actividad reciente</h3>
-          <ul class="activity-list">
-            <li class="activity-item">
-              <img src="./assets/icons/check.png" alt="check" />
-              <div class="activity-info">
-                <strong>Entrenamiento de cuerpo completo completado</strong>
-                <p>Hace 2 horas</p>
-              </div>
-            </li>
-            <li class="activity-item">
-              <img src="./assets/icons/new-task.png" alt="add" />
-              <div class="activity-info">
-                <strong>Rutina de pierna creada</strong>
-                <p>Ayer</p>
-              </div>
-            </li>
-            <li class="activity-item">
-              <img
-                src="./assets/icons/personal-records.png"
-                alt="personal-records"
-              />
-              <div class="activity-info">
-                <strong>Nueva meta personal: Press de banca 85kg</strong>
-                <p>Hace 3 dias</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="upcoming-workouts">
-          <h3>Proximos entrenamientos</h3>
-          <ul class="upcoming-workouts-list">
-            <li class="upcoming-workout-item">
-              <strong>Hoy</strong>
-              <div class="upcoming-workout-info">
-                <strong>Fuerza en el cuerpo superior</strong>
-                <p>Hoy, 6:00 PM</p>
-              </div>
-            </li>
-            <li class="upcoming-workout-item">
-              <strong>Mañana</strong>
-              <div class="upcoming-workout-info">
-                <strong>Sesion de cardio</strong>
-                <p>Mañana, 7:00 AM</p>
-              </div>
-            </li>
-            <li class="upcoming-workout-item">
-              <strong>Viernes</strong>
-              <div class="upcoming-workout-info">
-                <strong>Día de pierna</strong>
-                <p>Viernes, 5:30 PM</p>
-              </div>
-            </li>
-          </ul>
-          <a href="./templates/schedule.html"> Ver cronograma completo → </a>
-        </section>
-      </div>
-    </main>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTracker - Dashboard</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="shortcut icon" href="./assets/icons/main-logo.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <a href="./" class="logo">
+      <img src="./assets/icons/main-logo.png" alt="Main Logo" />
+      <h3>FitTracker</h3>
+    </a>
+    <nav>
+      <a href="./" class="nav-link dashboard">Panel</a>
+      <a href="./templates/workouts.html" class="nav-link">Entrenamientos</a>
+      <a href="./templates/schedule.html" class="nav-link">Cronogramas</a>
+      <a href="./templates/reports.html" class="nav-link">Reportes</a>
+    </nav>
+    <nav>
+      <a href="" class="notification">
+        <img src="./assets/icons/notification.png" alt="notification" />
+      </a>
+      <a href="" class="user-avatar">
+        <img src="./assets/images/user-avatar.png" alt="user-avatar" />
+        <!-- <span>SO</span> -->
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="bienvenida">
+      <h1>¡Bienvenido de nuevo, Sebas!</h1>
+      <p>Sigue tu viaje fitness y mantente motivado</p>
+    </div>
+    <section class="statics">
+      <div class="statics-item total-workouts">
+        <img src="./assets/icons/total-workouts.png" alt="Total workouts" class="statics-img" />
+        <div class="statics-info">
+          <h5>Trabajos totales</h5>
+          <h3>47</h3>
+        </div>
+      </div>
+      <div class="statics-item this-week">
+        <img src="./assets/icons/this-week.png" alt="This week" class="statics-img" />
+        <div class="statics-info">
+          <h5>Esta semana</h5>
+          <h3>3</h3>
+        </div>
+      </div>
+      <div class="statics-item personal-records">
+        <img src="./assets/icons/personal-records.png" alt="Personal records" class="statics-img" />
+        <div class="statics-info">
+          <h5>Logros personales</h5>
+          <h3>12</h3>
+        </div>
+      </div>
+      <div class="statics-item current-streak">
+        <img src="./assets/icons/current-streak.png" alt="Current streak" class="statics-img" />
+        <div class="statics-info">
+          <h5>Racha</h5>
+          <h3>7 dias</h3>
+        </div>
+      </div>
+    </section>
+    <section class="management">
+      <div class="management-item create-workout">
+        <div class="management-info">
+          <img src="./assets/icons/add.png" alt="add" />
+          <div class="management-text">
+            <h3>Crear entrenamiento</h3>
+            <p>Diseña tu sesión de entrenamiento</p>
+          </div>
+        </div>
+        <div class="management-button">
+          <button onclick="window.location.href='./templates/create-workout.html'">
+            Empezar
+            <img src="./assets/icons/arrow-gradient.png" alt="arrow" />
+          </button>
+        </div>
+      </div>
+      <div class="management-item my-workouts card-animation">
+        <div class="management-info">
+          <img src="./assets/icons/list.png" alt="list" />
+          <div class="management-text">
+            <h3>Mis entrenamientos</h3>
+            <p>Gestiona todos tus entrenamientos</p>
+          </div>
+        </div>
+        <div class="management-button">
+          <button onclick="window.location.href='./templates/workouts.html'">
+            Ver todo
+            <img src="./assets/icons/arrow.png" alt="arrow" />
+          </button>
+        </div>
+      </div>
+      <div class="management-item schedule card-animation">
+        <div class="management-info">
+          <img src="./assets/icons/schedule.png" alt="schedule" />
+          <div class="management-text">
+            <h3>Cronograma</h3>
+            <p>Planea tus siguentes sesiones</p>
+          </div>
+        </div>
+        <div class="management-button">
+          <button onclick="window.location.href='./templates/schedule.html'">
+            Programar ahora
+            <img src="./assets/icons/arrow.png" alt="arrow" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="dashboard-panels">
+      <section class="recent-activity">
+        <h3>Actividad reciente</h3>
+        <ul class="activity-list">
+          <li class="activity-item">
+            <img src="./assets/icons/check.png" alt="check" />
+            <div class="activity-info">
+              <strong>Entrenamiento de cuerpo completo completado</strong>
+              <p>Hace 2 horas</p>
+            </div>
+          </li>
+          <li class="activity-item">
+            <img src="./assets/icons/new-task.png" alt="add" />
+            <div class="activity-info">
+              <strong>Rutina de pierna creada</strong>
+              <p>Ayer</p>
+            </div>
+          </li>
+          <li class="activity-item">
+            <img src="./assets/icons/personal-records.png" alt="personal-records" />
+            <div class="activity-info">
+              <strong>Nueva meta personal: Press de banca 85kg</strong>
+              <p>Hace 3 dias</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="upcoming-workouts">
+        <h3>Proximos entrenamientos</h3>
+        <ul class="upcoming-workouts-list">
+          <li class="upcoming-workout-item">
+            <strong>Hoy</strong>
+            <div class="upcoming-workout-info">
+              <strong>Fuerza en el cuerpo superior</strong>
+              <p>Hoy, 6:00 PM</p>
+            </div>
+          </li>
+          <li class="upcoming-workout-item">
+            <strong>Mañana</strong>
+            <div class="upcoming-workout-info">
+              <strong>Sesion de cardio</strong>
+              <p>Mañana, 7:00 AM</p>
+            </div>
+          </li>
+          <li class="upcoming-workout-item">
+            <strong>Viernes</strong>
+            <div class="upcoming-workout-info">
+              <strong>Día de pierna</strong>
+              <p>Viernes, 5:30 PM</p>
+            </div>
+          </li>
+        </ul>
+        <a href="./templates/schedule.html"> Ver cronograma completo → </a>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

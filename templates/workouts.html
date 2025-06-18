@@ -1,174 +1,166 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitTracker - Workouts</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/workouts.css" />
-    <link
-      rel="shortcut icon"
-      href="../assets/icons/main-logo.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="../" class="logo">
-        <img src="../assets/icons/main-logo.png" alt="Main Logo" />
-        <h3>FitTracker</h3>
-      </a>
-      <nav>
-        <a href="../" class="nav-link">Dashboard</a>
-        <a href="../templates/workouts.html" class="nav-link">Workouts</a>
-        <a href="../templates/schedule.html" class="nav-link">Schedules</a>
-        <a href="../templates/reports.html" class="nav-link">Reports</a>
-      </nav>
-    </header>
-    <main>
-      <section class="bienvenida">
-        <div class="mensaje">
-          <h1>Mis entrenamientos</h1>
-          <p>Gestiona tus planes de entrenamiento</p>
-        </div>
-        <button
-          class="create-workout"
-          onclick="window.location.href='./create-workout.html'"
-        >
-          <img src="../assets/icons/plus.png" alt="plus" />
-          Crear entrenamiento
-        </button>
-      </section>
-      <section class="search-workouts">
-        <div class="input-wrapper">
-          <img src="../assets/icons/search.png" alt="search" />
-          <input
-            type="text"
-            id="input-workouts"
-            placeholder="Buscar entrenamientos..."
-          />
-        </div>
-        <div class="filters">
-          <!-- <label for="filter-type" class="visually-hidden">Filtrar por tipo</label> -->
-          <select name="filter-type" id="filter-type" class="filter-select">
-            <option>Todos los tipos</option>
-            <option>Cardio</option>
-            <option>Fuerza</option>
-            <option>Flexibilidad</option>
-          </select>
-          <select name="filter-recent" id="filter-recent" class="filter-select">
-            <option>Mas recientes</option>
-            <option>Hace 3 dias</option>
-            <option>Hace 7 dias</option>
-            <option>Hace 14 dias</option>
-            <option>Hace 30 dias</option>
-          </select>
-        </div>
-      </section>
-      <section class="workouts-plans">
-        <div class="workout-task">
-          <div class="workout-task-info">
-            <div class="workout-task-content">
-              <h3>Fuerza en el cuerpo superior</h3>
-              <p>Entrenamiento de fuerza</p>
-            </div>
-            <button class="menu-btn" onclick="window.location.href=''">
-              <img src="../assets/icons/kebab-menu.png" alt="menu" />
-            </button>
-          </div>
 
-          <div class="workout-list-section">
-            <ul class="workout-task-list">
-              <li class="workout-task-item">
-                <img src="../assets/icons/clock.png" alt="clock" />
-                <p>45-60 minutos</p>
-              </li>
-              <li class="workout-task-item">
-                <img src="../assets/icons/activity.png" alt="activity" />
-                <p>6 ejercicios</p>
-              </li>
-              <li class="workout-task-item">
-                <img src="../assets/icons/schedule.png" alt="schedule" />
-                <p>Ultima realización: Hoy</p>
-              </li>
-            </ul>
-          </div>
-          <div class="workout-task-actions">
-            <button class="start-btn" onclick="window.location.href=''">Empezar ejercicio</button>
-            <button class="calendar-btn" onclick="window.location.href='./schedule.html'">
-              <img src="../assets/icons/schedule.png" alt="calendar" />
-            </button>
-          </div>
-        </div>
-        <div class="workout-task">
-          <div class="workout-task-info">
-            <div class="workout-task-content">
-              <h3>Día de pierna</h3>
-              <p>Entrenamiento de fuerza</p>
-            </div>
-            <button class="menu-btn" onclick="window.location.href=''">
-              <img src="../assets/icons/kebab-menu.png" alt="menu" />
-            </button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTracker - Workouts</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/workouts.css" />
+  <link rel="shortcut icon" href="../assets/icons/main-logo.png" type="image/x-icon" />
+</head>
 
-          <div class="workout-list-section">
-            <ul class="workout-task-list">
-              <li class="workout-task-item">
-                <img src="../assets/icons/clock.png" alt="clock" />
-                <p>50-70 minutos</p>
-              </li>
-              <li class="workout-task-item">
-                <img src="../assets/icons/activity.png" alt="activity" />
-                <p>8 ejercicios</p>
-              </li>
-              <li class="workout-task-item">
-                <img src="../assets/icons/schedule.png" alt="schedule" />
-                <p>Ultima realización: Hace 2 días</p>
-              </li>
-            </ul>
+<body>
+  <header>
+    <a href="../" class="logo">
+      <img src="../assets/icons/main-logo.png" alt="Main Logo" />
+      <h3>FitTracker</h3>
+    </a>
+    <nav>
+      <a href="../" class="nav-link dashboard">Panel</a>
+      <a href="../templates/workouts.html" class="nav-link">Entrenamientos</a>
+      <a href="../templates/schedule.html" class="nav-link">Cronogramas</a>
+      <a href="../templates/reports.html" class="nav-link">Reportes</a>
+    </nav>
+  </header>
+  <main>
+    <section class="bienvenida">
+      <div class="mensaje">
+        <h1>Mis entrenamientos</h1>
+        <p>Gestiona tus planes de entrenamiento</p>
+      </div>
+      <button class="create-workout" onclick="window.location.href='./create-workout.html'">
+        <img src="../assets/icons/plus.png" alt="plus" />
+        Crear entrenamiento
+      </button>
+    </section>
+    <section class="search-workouts">
+      <div class="input-wrapper">
+        <img src="../assets/icons/search.png" alt="search" />
+        <input type="text" id="input-workouts" placeholder="Buscar entrenamientos..." />
+      </div>
+      <div class="filters">
+        <!-- <label for="filter-type" class="visually-hidden">Filtrar por tipo</label> -->
+        <select name="filter-type" id="filter-type" class="filter-select">
+          <option>Todos los tipos</option>
+          <option>Cardio</option>
+          <option>Fuerza</option>
+          <option>Flexibilidad</option>
+        </select>
+        <select name="filter-recent" id="filter-recent" class="filter-select">
+          <option>Mas recientes</option>
+          <option>Hace 3 dias</option>
+          <option>Hace 7 dias</option>
+          <option>Hace 14 dias</option>
+          <option>Hace 30 dias</option>
+        </select>
+      </div>
+    </section>
+    <section class="workouts-plans">
+      <div class="workout-task">
+        <div class="workout-task-info">
+          <div class="workout-task-content">
+            <h3>Fuerza en el cuerpo superior</h3>
+            <p>Entrenamiento de fuerza</p>
           </div>
-          <div class="workout-task-actions">
-            <button class="start-btn" onclick="window.location.href=''">Empezar ejercicio</button>
-            <button class="calendar-btn" onclick="window.location.href='./schedule.html'">
-              <img src="../assets/icons/schedule.png" alt="calendar" />
-            </button>
-          </div>
+          <button class="menu-btn" onclick="window.location.href=''">
+            <img src="../assets/icons/kebab-menu.png" alt="menu" />
+          </button>
         </div>
-        <div class="workout-task">
-          <div class="workout-task-info">
-            <div class="workout-task-content">
-              <h3>HIIT de cardio</h3>
-              <p>HIIT</p>
-            </div>
-            <button class="menu-btn" onclick="window.location.href=''">
-              <img src="../assets/icons/kebab-menu.png" alt="menu" />
-            </button>
-          </div>
 
-          <div class="workout-list-section">
-            <ul class="workout-task-list">
-              <li class="workout-task-item">
-                <img src="../assets/icons/clock.png" alt="clock" />
-                <p>25-30 minutos</p>
-              </li>
-              <li class="workout-task-item">
-                <img src="../assets/icons/activity.png" alt="activity" />
-                <p>5 ejercicios</p>
-              </li>
-              <li class="workout-task-item">
-                <img src="../assets/icons/schedule.png" alt="schedule" />
-                <p>Ultima realización: Hace 1 semana</p>
-              </li>
-            </ul>
-          </div>
-          <div class="workout-task-actions">
-            <button class="start-btn" onclick="window.location.href=''">Empezar ejercicio</button>
-            <button class="calendar-btn" onclick="window.location.href='./schedule.html'">
-              <img src="../assets/icons/schedule.png" alt="calendar" />
-            </button>
-          </div>
+        <div class="workout-list-section">
+          <ul class="workout-task-list">
+            <li class="workout-task-item">
+              <img src="../assets/icons/clock.png" alt="clock" />
+              <p>45-60 minutos</p>
+            </li>
+            <li class="workout-task-item">
+              <img src="../assets/icons/activity.png" alt="activity" />
+              <p>6 ejercicios</p>
+            </li>
+            <li class="workout-task-item">
+              <img src="../assets/icons/schedule.png" alt="schedule" />
+              <p>Ultima realización: Hoy</p>
+            </li>
+          </ul>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="workout-task-actions">
+          <button class="start-btn" onclick="window.location.href=''">Empezar ejercicio</button>
+          <button class="calendar-btn" onclick="window.location.href='./schedule.html'">
+            <img src="../assets/icons/schedule.png" alt="calendar" />
+          </button>
+        </div>
+      </div>
+      <div class="workout-task">
+        <div class="workout-task-info">
+          <div class="workout-task-content">
+            <h3>Día de pierna</h3>
+            <p>Entrenamiento de fuerza</p>
+          </div>
+          <button class="menu-btn" onclick="window.location.href=''">
+            <img src="../assets/icons/kebab-menu.png" alt="menu" />
+          </button>
+        </div>
+
+        <div class="workout-list-section">
+          <ul class="workout-task-list">
+            <li class="workout-task-item">
+              <img src="../assets/icons/clock.png" alt="clock" />
+              <p>50-70 minutos</p>
+            </li>
+            <li class="workout-task-item">
+              <img src="../assets/icons/activity.png" alt="activity" />
+              <p>8 ejercicios</p>
+            </li>
+            <li class="workout-task-item">
+              <img src="../assets/icons/schedule.png" alt="schedule" />
+              <p>Ultima realización: Hace 2 días</p>
+            </li>
+          </ul>
+        </div>
+        <div class="workout-task-actions">
+          <button class="start-btn" onclick="window.location.href=''">Empezar ejercicio</button>
+          <button class="calendar-btn" onclick="window.location.href='./schedule.html'">
+            <img src="../assets/icons/schedule.png" alt="calendar" />
+          </button>
+        </div>
+      </div>
+      <div class="workout-task">
+        <div class="workout-task-info">
+          <div class="workout-task-content">
+            <h3>HIIT de cardio</h3>
+            <p>HIIT</p>
+          </div>
+          <button class="menu-btn" onclick="window.location.href=''">
+            <img src="../assets/icons/kebab-menu.png" alt="menu" />
+          </button>
+        </div>
+
+        <div class="workout-list-section">
+          <ul class="workout-task-list">
+            <li class="workout-task-item">
+              <img src="../assets/icons/clock.png" alt="clock" />
+              <p>25-30 minutos</p>
+            </li>
+            <li class="workout-task-item">
+              <img src="../assets/icons/activity.png" alt="activity" />
+              <p>5 ejercicios</p>
+            </li>
+            <li class="workout-task-item">
+              <img src="../assets/icons/schedule.png" alt="schedule" />
+              <p>Ultima realización: Hace 1 semana</p>
+            </li>
+          </ul>
+        </div>
+        <div class="workout-task-actions">
+          <button class="start-btn" onclick="window.location.href=''">Empezar ejercicio</button>
+          <button class="calendar-btn" onclick="window.location.href='./schedule.html'">
+            <img src="../assets/icons/schedule.png" alt="calendar" />
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

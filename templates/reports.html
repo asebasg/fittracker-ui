@@ -1,29 +1,117 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitTracker - Reports</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link
-      rel="shortcut icon"
-      href="../assets/icons/main-logo.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="../" class="logo">
-        <img src="../assets/icons/main-logo.png" alt="Main Logo" />
-        <h3>FitTracker</h3>
-      </a>
-      <nav>
-        <a href="../" class="nav-link">Dashboard</a>
-        <a href="../templates/workouts.html" class="nav-link">Workouts</a>
-        <a href="../templates/schedule.html" class="nav-link">Schedules</a>
-        <a href="../templates/reports.html" class="nav-link">Reports</a>
-      </nav>
-    </header>
-    <main></main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTracker - Reports</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/reports.css">
+  <link rel="shortcut icon" href="../assets/icons/main-logo.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <a href="../" class="logo">
+      <img src="../assets/icons/main-logo.png" alt="Main Logo" />
+      <h3>FitTracker</h3>
+    </a>
+    <nav>
+      <a href="../" class="nav-link dashboard">Panel</a>
+      <a href="../templates/workouts.html" class="nav-link">Entrenamientos</a>
+      <a href="../templates/schedule.html" class="nav-link">Cronogramas</a>
+      <a href="../templates/reports.html" class="nav-link">Reportes</a>
+    </nav>
+  </header>
+  <main>
+    <section class="progress-report">
+      <div class="content">
+        <h1>Reporte de progresos</h1>
+        <p>Seguimiento de tu viaje de acondicionamiento físico y tus logros</p>
+      </div>
+      <div class="interact-options">
+        <select name="range" id="range">
+          <option value="3-dias">Ultimos 3 dias</option>
+          <option value="7-dias">Ultimos 7 dias</option>
+          <option value="14-dias">Ultimos 14 dias</option>
+          <option value="30-dias">Ultimos 30 dias</option>
+        </select>
+        <button class="export">
+          <img src="../assets/icons/export.png" alt="export">
+          Exportar
+        </button>
+      </div>
+
+    </section>
+    <section class="statics">
+      <div class="statics-item total-workouts">
+        <img src="../assets/icons/total-workouts.png" alt="Total workouts" class="statics-img" />
+        <div class="statics-info">
+          <h5>Trabajos totales</h5>
+          <h3>47</h3>
+          <p>+12% desde el ultimo mes</p>
+        </div>
+      </div>
+      <div class="statics-item total-time">
+        <img src="../assets/icons/statics-clock.png" alt="This week" class="statics-img" />
+        <div class="statics-info">
+          <h5>Tiempo total</h5>
+          <h3>42h</h3>
+          <p>+8% desde el mes pasado</p>
+        </div>
+      </div>
+      <div class="statics-item goals-achieved">
+        <img src="../assets/icons/pointer.png" alt="Personal records" class="statics-img" />
+        <div class="statics-info">
+          <h5>Logros conseguidos</h5>
+          <h3>8/10</h3>
+          <p>Tasa de finalización del 80%</p>
+        </div>
+      </div>
+      <div class="statics-item current-streak">
+        <img src="../assets/icons/current-streak.png" alt="Current streak" class="statics-img" />
+        <div class="statics-info">
+          <h5>Racha</h5>
+          <h3>7 dias</h3>
+          <p>¡Mejora personal!</p>
+        </div>
+      </div>
+    </section>
+    <section class="training-insights">
+      <div class="workout-frequency">
+        <div class="workout-frequency-content">
+          <h3>Frecuencias de entrenamientos</h3>
+          <select name="workout-frequency" id="workout-frequency">
+            <option value="3-dias">Ultimos 3 dias</option>
+            <option value="7-dias">Ultimos 7 dias</option>
+            <option value="14-dias">Ultimos 14 dias</option>
+            <option value="30-dias">Ultimos 30 dias</option>
+          </select>
+        </div>
+        <img src="../assets/images/workout-frequency-insights.png" alt="workout-frequency-insights">
+      </div>
+      <div class="strength-progress">
+        <div class="strength-progress-content">
+          <h3>Progreso de fuerza</h3>
+          <select name="muscle-group" id="muscle-group">
+            <option value="">Selecciona un grupo muscular</option>
+            <option value="pecho">Pecho</option>
+            <option value="espalda">Espalda</option>
+            <option value="hombros">Hombros</option>
+            <option value="brazos">Brazos</option>
+            <option value="piernas">Piernas</option>
+            <option value="gluteos">Glúteos</option>
+            <option value="abdomen">Abdomen</option>
+            <option value="trapecio">Trapecio</option>
+            <option value="antebrazo">Antebrazo</option>
+            <option value="pantorrilla">Pantorrilla</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+        <img src="../assets/images/strength-progress-insights.png" alt="strength-progress-insights">
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

@@ -20,12 +20,12 @@ main {
   display: grid;
 } */
 
-section {
+/* section {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 25px 50px;
-}
+} */
 
 .bienvenida {
   margin: 25px 70px;
@@ -34,6 +34,14 @@ section {
 
 .bienvenida p {
   color: #4b5563;
+}
+
+.statics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  margin: 25px 50px;
 }
 
 /* Statics info */
