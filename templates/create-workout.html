@@ -1,99 +1,79 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitTracker - Create Workout</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/create-workout.css" />
-    <link
-      rel="shortcut icon"
-      href="../assets/icons/main-logo.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="../" class="logo">
-        <img src="../assets/icons/main-logo.png" alt="Main Logo" />
-        <h3>FitTracker</h3>
-      </a>
-      <nav>
-        <a href="../" class="nav-link">Dashboard</a>
-        <a href="../templates/workouts.html" class="nav-link">Workouts</a>
-        <a href="../templates/schedule.html" class="nav-link">Schedules</a>
-        <a href="../templates/reports.html" class="nav-link">Reports</a>
-      </nav>
-    </header>
-    <main>
-      <section class="bienvenida">
-        <div class="mensaje">
-          <h1>Crear nuevo entrenamiento</h1>
-          <p>Diseña y personaliza tu plan de entrenamiento</p>
-        </div>
 
-        <button
-          class="back-button"
-          onclick="window.location.href='./workouts.html'"
-        >
-          <img src="../assets/icons/back.png" alt="back" />
-          Volver a los entrenamientos
-        </button>
-      </section>
-      <section class="create-workout-form">
-        <form action="#" method="post" id="create-workout">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name" class="form-label name"
-                >Nombre del entrenamiento</label
-              >
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Ej: Rutina de fuerza"
-              />
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTracker - Create Workout</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/create-workout.css" />
+  <link rel="shortcut icon" href="../assets/icons/main-logo.png" type="image/x-icon" />
+</head>
 
-            <div class="form-group">
-              <label for="type" class="form-label type"
-                >Tipo de entrenamiento</label
-              >
-              <select name="workout-type" id="workout-type">
-                <option value="">Selecciona una opcion</option>
-                <option value="cardio">Cardio</option>
-                <option value="strength">Fuerza</option>
-                <option value="flexibility">Flexibilidad</option>
-                <option value="other">Otro</option>
-              </select>
-            </div>
+<body>
+  <header>
+    <a href="../" class="logo">
+      <img src="../assets/icons/main-logo.png" alt="Main Logo" />
+      <h3>FitTracker</h3>
+    </a>
+    <nav>
+      <a href="../" class="nav-link">Dashboard</a>
+      <a href="../templates/workouts.html" class="nav-link">Workouts</a>
+      <a href="../templates/schedule.html" class="nav-link">Schedules</a>
+      <a href="../templates/reports.html" class="nav-link">Reports</a>
+    </nav>
+  </header>
+  <main>
+    <section class="bienvenida">
+      <div class="mensaje">
+        <h1>Crear nuevo entrenamiento</h1>
+        <p>Diseña y personaliza tu plan de entrenamiento</p>
+      </div>
+
+      <button class="back-button" onclick="window.location.href='./workouts.html'">
+        <img src="../assets/icons/back.png" alt="back" />
+        Volver a los entrenamientos
+      </button>
+    </section>
+    <section class="create-workout-form">
+      <form action="#" method="post" id="create-workout">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" class="form-label name">Nombre del entrenamiento</label>
+            <input type="text" id="name" name="name" required placeholder="Ej: Rutina de fuerza" />
           </div>
 
           <div class="form-group">
-            <label for="description" class="form-label description"
-              >Descripcion (opcional)</label
-            >
-            <textarea
-              id="description"
-              name="description"
-              rows="4"
-              placeholder="Escribe una breve descripcion del entrenamiento"
-            >
-            </textarea>
+            <label for="type" class="form-label type">Tipo de entrenamiento</label>
+            <select name="workout-type" id="workout-type">
+              <option value="">Selecciona una opcion</option>
+              <option value="cardio">Cardio</option>
+              <option value="strength">Fuerza</option>
+              <option value="flexibility">Flexibilidad</option>
+              <option value="other">Otro</option>
+            </select>
           </div>
-        </form>
-
-        <div class="exercises">
-          <h2>Ejercicios</h2>
-
-          <button class="add-exercise">
-            <img src="../assets/icons/plus.png" alt="add" />
-            Añadir ejercicio
-          </button>
         </div>
 
-      </section>
-    </main>
-  </body>
+        <div class="form-group">
+          <label for="description" class="form-label description">Descripcion (opcional)</label>
+          <textarea id="description" name="description" rows="4"
+            placeholder="Escribe una breve descripcion del entrenamiento">
+            </textarea>
+        </div>
+      </form>
+
+      <div class="exercises">
+        <h2>Ejercicios</h2>
+
+        <button class="add-exercise">
+          <img src="../assets/icons/plus.png" alt="add" />
+          Añadir ejercicio
+        </button>
+      </div>
+
+    </section>
+  </main>
+</body>
+
 </html>
