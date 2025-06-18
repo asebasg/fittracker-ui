@@ -72,6 +72,58 @@
         </button>
       </div>
 
+      <div class="exercise-info">
+        <h4>Ejercicio 1</h4>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="exercise-name">Nombre del ejercicio</label>
+            <input type="text" class="exercise-name" placeholder="Ej: Peso muerto">
+          </div>
+          <div class="form-group">
+            <label for="muscle-group" class="form-label muscle-group">Grupo muscular</label>
+            <select name="muscle-group" id="muscle-group">
+              <option value="">Selecciona un grupo muscular</option>
+              <option value="pecho">Pecho</option>
+              <option value="espalda">Espalda</option>
+              <option value="hombros">Hombros</option>
+              <option value="brazos">Brazos</option>
+              <option value="piernas">Piernas</option>
+              <option value="gluteos">Glúteos</option>
+              <option value="abdomen">Abdomen</option>
+              <option value="trapecio">Trapecio</option>
+              <option value="antebrazo">Antebrazo</option>
+              <option value="pantorrilla">Pantorrilla</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="sets">
+          <p>Sets</p>
+          <button class="add-set">
+            <img src="../assets/icons/blue-plus.png" alt="blue-plus">
+            Añadir set
+          </button>
+        </div>
+        <div class="set-item">
+          <label for="set1">Set 1:</label>
+          <input type="number" class="reps" placeholder="Repeticiones"> repeticiones
+          <input type="number" class="weight" placeholder="Peso"> kg
+        </div>
+        <div class="rest-time">
+          <label for="rest-time-label">Tiempo de descanso (segundos)</label>
+          <input type="number" min="0" max="60" placeholder="60">
+        </div>
+      </div>
+      <hr>
+      <div class="submit-buttons">
+        <button class="save-draft">
+          Guardar como borrador
+        </button>
+        <button type="submit" class="submit-btn">
+          Crear entrenamiento
+        </button>
+      </div>
     </section>
   </main>
 </body>

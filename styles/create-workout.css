@@ -1,7 +1,16 @@
 main {
   margin: 0 auto;
-  width: 1150px;
+  width: 1050px;
   height: 488px;
+}
+
+/* Animacion para los campos del formulario */
+
+input:hover,
+select:hover,
+textarea:hover {
+  border: 2px solid #0284c7;
+  transition: all 0.3s ease;
 }
 
 .bienvenida {
@@ -142,4 +151,119 @@ label {
 .add-exercise img {
   width: 18px;
   height: 18px;
+}
+
+/* Informacion del ejercicio */
+
+.exercise-info {
+  display: grid;
+  background-color: #F9FAFB;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.exercise-info label {
+  color: #374151;
+  font-weight: 400;
+}
+
+.exercise-info h4 {
+  font-weight: 400;
+  margin: 0.4rem;
+}
+
+.sets {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 7px 0px 7px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.sets button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: #0284C7;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  gap: 0.2rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sets img {
+  pointer-events: none;
+}
+
+.set-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.set-item label {
+  color: #4B5563;
+}
+
+.set-item input {
+  width: 100px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.set-item::placeholder {
+  color: #9CA3AF;
+  background-color: transparent;
+}
+
+.rest-time {
+  display: grid;
+  margin: 5px;
+}
+
+.rest-time input {
+  width: 40px;
+}
+
+.submit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  width: 100%;
+  margin: 13px;
+}
+
+.save-draft {
+  background-color: transparent;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  color: #374151;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.submit-btn {
+  background-color: #0284C7;
+  border: 1px solid #0284C7;
+  border-radius: 6px;
+  color: white;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
